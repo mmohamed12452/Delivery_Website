@@ -1,0 +1,46 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+:root
+{
+    --green:#50C878;
+    --red:#F70B0B;
+    --yellow:#FFDF00;
+    --white:#FFFFFF;
+}
+
+img
+{
+    width:278px;
+    height:100px;
+}
+header
+{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: var(--green);
+}
+.navbar a
+{
+    color:white;
+    font-weight: bold;
+    font-size:24px;
+    margin-left:10px;
+    text-decoration: none;
+}
+#shopping
+{
+    color:var(--white);
+    background-color:var(--green);
+    box-shadow:3px 3px 3px grey;
+    border:none;
+    border-radius:25px;
+    width:214px;
+    height:52px;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-right:40px;
+}
