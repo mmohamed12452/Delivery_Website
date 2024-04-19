@@ -69,6 +69,7 @@ header
      justify-content: center;
      align-items: center;
  }
+
  .rectangle
  {
     display:flex;
@@ -106,3 +107,32 @@ header
     font-weight: bold;
     margin-top:40px;
  }
+ /*-------Ending of Welcome Page--------------------*/
+
+ /*-------Start of icons----------------------------*/
+#icon
+{
+    display:flex;
+    justify-content: space-evenly;
+}
+.icons
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:30px;
+}
+ .icons i
+{
+    font-size:4em;
+    color:var(--green);
+}
+.icons p
+{
+    font-size: 2em;
+    color:var(--green);
+    margin-top:25px;
+    margin-bottom:50px;
+}
+ /*------------End of icons------------------------*/
