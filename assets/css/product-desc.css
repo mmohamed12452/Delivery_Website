@@ -1,0 +1,208 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+:root
+{
+    --green:#50C878;
+    --red:#F70B0B;
+    --yellow:#FFDF00;
+    --white:#FFFFFF;
+}
+#product-description-container
+{
+   display: flex;
+   width:100%;
+}
+.image
+{
+  width:40%;
+}
+.texts
+{
+    width:60%;
+    padding-right:50px;
+}
+.image img
+{
+    width:90%;
+} 
+#Description
+{
+   text-align: center;
+   color: var(--green);
+   font-size: 2em;
+   margin-top:40px;
+   margin-bottom:50px;
+}
+#cereal
+{
+    font-size:2em;
+    font-weight:bold;
+    color:var(--green);
+    margin-bottom:10px;
+    margin-left:-20px;
+}
+.price
+{
+    font-size:2.7em;
+    font-weight:bold;
+    color:var(--yellow);
+    margin-bottom:20px;
+}
+#details
+{
+    font-size: 2em;
+    color:var(--green);
+    font-weight: bold;
+    
+    margin-bottom:15px;
+}
+
+#text
+{
+    font-size:1.4em;
+    font-weight: bold;
+    color:var(--green);
+}
+.rectangle
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:441px;
+    height:67px;
+    background-color: var(--yellow);
+    border-radius:40px;
+}
+#number
+{
+    font-size:2em;
+    color: var(--green);
+}
+.circle
+{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width:80px;
+   height:80px;
+   background-color: var(--red);
+   border-radius: 50%;
+} 
+.heart-icons i
+{
+     
+     font-size:2em;
+     color:var(--red);
+}
+#quantity-container
+{
+    display:flex;
+    justify-content: flex-end;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+
+#add-to-cart-button{
+    background-color: var(--green);
+    color:var(--white);
+    font-size:1.9em;
+    padding:12px 22px;
+    border:none;
+    border-radius:40px;
+    font-weight:bold;
+}
+#add-to-cart-button i
+{
+   color:var(--yellow);
+   margin-right:20px;
+}
+
+
+#heart
+{
+   font-size:1.9em;
+   color:var(--green);
+   font-weight:bold;
+   text-decoration: none;    
+}
+#heart i
+{
+    color:var(--red);
+}
+#containing
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+/*------Start of footer-------*/
+
+#grocery-shop
+{
+  display:flex;
+  justify-content: space-between;
+  background-color: var(--green);
+  width:100%;
+  margin-top:80px;
+}
+.footer-logo
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:20%;
+  height:100%;
+}
+.footer-logo img
+{
+   width:100%;
+   height:60%;
+}
+.quick-links
+{
+  width:16%;
+  padding:10px;
+  font-weight: bold;
+  color:white;
+}
+.quick-links p
+{
+   font-size:30px;
+   margin-bottom:20px;
+}
+.quick-links hr
+{
+   border-color:black;
+   width:60%;
+}
+
+.quick-links a
+{
+  display:block;
+  margin:10px;
+  color:var(--yellow);
+  text-decoration: none;
+  font-size:1.3em;
+}
+
+.location
+{
+ width:30% !important;
+}
+.address
+{
+ color:var(--yellow);
+ margin:10px !important;
+ font-size:1.3em !important;
+}
+.location img
+{
+ width:90%;
+ height:15vh;
+ border-radius: 25px;
+}
+/*-----------------End of footer-----------------*/
