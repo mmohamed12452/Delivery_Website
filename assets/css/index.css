@@ -233,6 +233,11 @@ header
    {
     display: flex;
     justify-content: space-evenly;
+    text-decoration: none;
+   }
+   .card-container a
+   {
+     text-decoration:none;
    }
   
     .trending-products
