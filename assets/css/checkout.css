@@ -1,0 +1,191 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+:root
+{
+    --green:#50C878;
+    --red:#F70B0B;
+    --yellow:#FFDF00;
+    --white:#FFFFFF;
+}
+h1
+{
+   font-size:5em;
+   font-weight:bold;
+   color:var(--green);
+   text-align: center;
+   margin-top:50px;
+   margin-bottom:50px;
+}
+#horizontal-line
+{
+    width:24%;
+    height:5px;
+    background-color: var(--yellow);
+    margin-left:38%;
+    margin-right:38%;
+    margin-top:-50px;
+    margin-bottom:60px;
+}
+.rectangle
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60%;
+    height:140px;
+    border:2px solid black;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    border-radius: 10px;
+}
+.rectangle img
+{
+    width:130px;
+    height:80%;
+}
+.rectangle label
+{
+    color:var(--green);
+    font-size:2.8em;
+    font-weight: bold;
+}
+.rectangle input
+{
+   width:24px;
+   height:30px;
+   margin-right:20px;
+}
+#credit-background
+{
+  display: flex;
+  justify-content: space-between;
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+}
+#credit-background p
+{
+    font-size:2em;
+    font-weight:bold;
+    color:var(--green);
+    margin-top:100px;
+    margin-bottom:20px;
+}
+#credit-background input
+{
+    height:60px;
+    border:1 solid black;
+    font-size:2em;
+    border-radius: 10px;
+}
+#credit-background ::placeholder
+{
+    color:var(--green);
+}
+#crediting
+{
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+}
+#credits
+{
+  font-size:2em;
+  color:var(--green);
+  font-weight:bold;
+  margin-top:70px;
+  margin-bottom: 20px;
+}
+#crediting input{
+    width:390px;
+    height:60px;
+    border-radius: 5px;
+    margin-bottom:200px;
+}
+#crediting ::placeholder
+{
+    font-size:1.6em;
+    color:var(--green);
+}
+button{
+    width:400px;
+    height:70px;
+    margin-left:700px;
+    border:none;
+    font-size:2em;
+    font-weight:bold;
+    color:var(--white);
+    background-color: var(--green);
+    border-radius: 10px;
+    margin-bottom:300px;
+}
+
+#grocery-shop
+    {
+      display:flex;
+      justify-content: space-between;
+      background-color: var(--green);
+      margin-top:50px;
+      width:100%;
+    }
+    .footer-logo
+    {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width:20%;
+      height:100%;
+    }
+    .footer-logo img
+    {
+       width:100%;
+       height:60%;
+    }
+    .quick-links
+    {
+      width:16%;
+      padding:10px;
+      font-weight: bold;
+      color:white;
+    }
+    .quick-links p
+    {
+       font-size:30px;
+       margin-bottom:20px;
+    }
+    .quick-links hr
+    {
+       border-color:black;
+       width:60%;
+    }
+
+    .quick-links a
+    {
+      display:block;
+      margin:10px;
+      color:var(--yellow);
+      text-decoration: none;
+      font-size:1.3em;
+    }
+  
+   .location
+   {
+     width:30% !important;
+   }
+   .address
+   {
+     color:var(--yellow);
+     margin:10px !important;
+     font-size:1.3em !important;
+   }
+   .location img
+   {
+     width:90%;
+     height:15vh;
+     border-radius: 25px;
+   }
