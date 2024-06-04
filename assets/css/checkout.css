@@ -35,7 +35,7 @@ h1
     justify-content: space-between;
     align-items: center;
     width:60%;
-    height:140px;
+    height:auto;
     border:2px solid black;
     padding:10px;
     margin-left:auto;
@@ -47,6 +47,49 @@ h1
 {
     width:130px;
     height:80%;
+}
+@media screen and (max-width:480px)
+{
+
+  h1
+  {
+    font-size: 2.3em;  
+    margin-bottom:4px !important;
+  }
+#horizontal-line
+{
+   margin-top:14px !important;
+}
+  .rectangle div label
+  {
+    font-size:1.8em;
+  }
+  .rectangle img
+  {
+      display:none;
+  }
+  #credit-background
+  {
+    flex-direction: column;
+    width:80% !important;
+  }
+
+  #credit-background input
+  {
+    width: 100%;
+  }
+  #credit-background div
+  {
+     margin-bottom:0px !important;
+  }
+  #crediting
+  {
+    width:80% !important;
+  }
+  #crediting input
+  {
+    width:100% !important;
+  }
 }
 .rectangle label
 {
@@ -112,19 +155,35 @@ h1
     font-size:1.6em;
     color:var(--green);
 }
-button{
-    width:400px;
-    height:70px;
-    margin-left:700px;
+.payment-container
+{
+  display:flex;
+  justify-content: center;
+}
+#payment
+{
     border:none;
     font-size:2em;
     font-weight:bold;
+    text-align: center;
     color:var(--white);
     background-color: var(--green);
     border-radius: 10px;
-    margin-bottom:300px;
+    padding:15px;
+    margin-bottom:20px;
 }
 
+@media screen and (max-width:480px)
+{
+  #grocery-shop
+  {
+    flex-direction: column;
+  }
+  .footer-logo
+  {
+    width:100%;
+  }
+}
 #grocery-shop
     {
       display:flex;

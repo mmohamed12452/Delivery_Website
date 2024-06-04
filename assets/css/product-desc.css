@@ -22,7 +22,6 @@
 .texts
 {
     width:60%;
-    padding-right:50px;
 }
 .image img
 {
@@ -56,7 +55,6 @@
     font-size: 2em;
     color:var(--green);
     font-weight: bold;
-    
     margin-bottom:15px;
 }
 
@@ -121,7 +119,92 @@
    color:var(--yellow);
    margin-right:20px;
 }
+@media screen and (max-width: 480px)
+{
+    #product-description-container
+    {
+        
+        flex-direction:column;
+    }
+    .texts
+    {
+      width:100%;
+      font-size: 1.2em;
+     
+    }
+    .image
+    {
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+    .image img
+    {
+       width:50%;
+    }
+    #cereal
+    {
+        font-size: 1.7em;
+    }
+    .price
+    {
+        font-size:1.9em;
+       
+    }
+    #details
+    {
+        font-size: 1.9em;
+       
+    }
+    #text
+    {
+        font-size:1em;
+        
+    }
+    .circle
+    {
+       width:50px;
+       height:50px;
 
+    }
+    .rectangle
+    {
+        width:50%;
+        height:40px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    #containing
+    {     
+        flex-direction: column;
+        align-items: center;
+    }
+    #containing a
+    {
+        margin-top:30px;
+    }
+    #grocery-shop
+    {
+        flex-direction: column;
+        width:100% !important;
+    }
+    .footer-logo
+    {
+        width:100% !important;
+    }
+    .quick-links hr, .location hr
+    {
+        width:90% !important;
+    }
+    .quick-links
+    {
+        width:100% !important;
+    }
+    .location
+    {
+        width:100% !important;
+    }
+}
 
 #heart
 {
@@ -140,6 +223,7 @@
     justify-content: space-between;
 
 }
+
 /*------Start of footer-------*/
 
 #grocery-shop
@@ -170,17 +254,16 @@
   font-weight: bold;
   color:white;
 }
-.quick-links p
+.quick-links p, #locate
 {
    font-size:30px;
    margin-bottom:20px;
 }
-.quick-links hr
+.quick-links hr, .location hr
 {
    border-color:black;
    width:60%;
 }
-
 .quick-links a
 {
   display:block;
@@ -192,12 +275,16 @@
 
 .location
 {
- width:30% !important;
+ width:30%;
+ padding:10px;
+ font-weight: bold;
+ color:white;
 }
+
 .address
 {
  color:var(--yellow);
- margin:10px !important;
+ /* margin:10px !important; */
  font-size:1.3em !important;
 }
 .location img

@@ -81,7 +81,6 @@ h1
 {
   display:flex;
   margin-top: 20px;
-
 }
 #numbers
 {
@@ -193,6 +192,93 @@ hr
   color:var(--yellow);
   margin-right:20px;
 }
+@media screen and (max-width:480px)
+{
+  #grocery-shop
+  {
+    flex-direction:column;
+  }
+  .footer-logo
+  {
+    width:100% !important;
+    margin-left: -100px;
+  }
+  #outer-container
+  {
+     flex-direction: column !important;
+     height:auto !important;
+     padding:20px;
+     width:90% !important;
+  } 
+  .final-product
+  {
+    justify-content: space-between;
+    width:90% !important;
+  }
+  #number
+  {
+    font-size:1.7em;
+  }
+  #savers
+  {
+    font-size:1.3em;
+  }
+  .triangle
+  {
+    width:40px;
+    height:40px;
+  }
+  .triangle-up
+  {
+     border-left:25px solid transparent;
+     border-right:25px solid transparent;
+     border-bottom:40px solid var(--red);
+  }
+  .triangle-down
+  {
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-top:40px solid var(--red);
+  }
+  .triangle i
+  {
+     font-size:1.2em;
+     padding-left:10px;
+  }
+  #numbers
+  {
+     font-size:2.5em;
+  }
+  
+  .inner-container
+  {
+    width:90% !important;
+  }
+  .totals
+  {
+    font-size: 0.8em;
+  }
+  #checkout
+  {
+    font-size:1.7em !important;
+  }
+  .quick-links
+  {
+    width:100% !important;
+  }
+  .quick-links hr
+  {
+    width:90% !important;
+  }
+  .location
+  {
+    width:100% !important;
+  }
+  .cart-description
+  {
+    width:90% !important;
+  }
+}
 #grocery-shop
     {
       display:flex;
@@ -243,7 +329,10 @@ hr
   
    .location
    {
-     width:30% !important;
+     width:30%;
+     padding:10px;
+     font-weight: bold;
+     color:white;
    }
    .address
    {

@@ -1,360 +1,425 @@
-*
-{
-    margin:0px;
-    padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-:root
-{
-    --green:#50C878;
-    --red:#F70B0B;
-    --yellow:#FFDF00;
-    --white:#FFFFFF;
+:root {
+  --green: #50c878;
+  --red: #f70b0b;
+  --yellow: #ffdf00;
+  --white: #ffffff;
 }
-
-
 
 /*====================================
  Beginning of header styles 
  =====================================*/
-img
+#grocery-logo
 {
-    width:278px;
-    height:100px;
+  width: 150px;
+  height: 100px;
+  margin-left: 10px;
+}
+#icones {
+  font-size: 50px !important;
+  color: white;
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+  /*position: fixed;*/
+  top: 0;
+}
+.navbar a {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+#shopping {
+  color: var(--white);
+  background-color: var(--green);
+  box-shadow: 3px 3px 3px grey;
+  border: none;
+  border-radius: 25px;
+  width: 214px;
+  height: 52px;
+  font-weight: bolder;
+  font-size: 2em;
+  margin-right: 40px;
 }
 
-header
-{
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    background-color: var(--green);
-    /*position: fixed;*/
-    top:0;
-}
-.navbar a
-{
-    color:white;
-    font-weight: bold;
-    font-size:24px;
-    margin-left:10px;
-    text-decoration: none;
-}
-#shopping
-{
-    color:var(--white);
-    background-color:var(--green);
-    box-shadow:3px 3px 3px grey;
-    border:none;
-    border-radius:25px;
-    width:214px;
-    height:52px;
-    font-weight: bolder;
-    font-size: 2em;
-    margin-right:40px;
-}
-
-
- /*====================================
+/*====================================
  Beginning of welcome section
  =====================================*/
- #grocery
- {
-     width:100%;
-     height:691px;
-     background-image: url(../images/grocery\ site.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     display:flex;
-     justify-content: center;
-     align-items: center;
- }
 
- .rectangle
- {
-    display:flex;
-    justify-content:center;
-    align-items: center;
+@media screen and (max-width: 480px) {
+  header {
+    height: auto;
     flex-direction: column;
-    border-radius:40px;
-    width:686px;
-    height:347px;
-    background-color: var(--green);
- }
- .rectangle h1
- {
-    font-size: 41px;
-    color:white;
-    font-weight: bolder;
-    margin-bottom:20px;
- }
- .rectangle p
- {
-    font-size:24px;
-    color:white;
-    font-weight:bold;
- }
- #Shoppers
- {
-    color:var(--white);
-    background-color:var(--red);
-    box-shadow:3px 3px 3px grey;
-    border-radius:30px;
-    border:none;
-    width:253px;
-    height:60px;
-    font-size:32px;
-    font-weight: bold;
-    margin-top:40px;
- }
- /*-------Ending of Welcome Page--------------------*/
+    align-items: flex-start;
+    padding: 20px;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #navbar {
+    display: none;
+  }
 
- /*-------Start of icons----------------------------*/
-#icon
-{
-    display:flex;
-    justify-content: space-evenly;
-}
-
-.icons
-{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  #navbar.show {
+    display: block;
+  }
+  #icones {
+    display: block;
+  }
+  .navbar a {
+    display: block !important;
+    margin-top: 20px;
+  }
+  .navbar a:hover {
+    background-color: darkgreen;
+    padding: 10px;
+  }
+  #shopping {
+    margin-top: 30px;
+  }
+  #grocery {
+    background-color: var(--white) !important;
+    background-image: none !important;
+  }
+  #grocery-shop {
     flex-direction: column;
-    margin-top:30px;
-}
- .icons i
-{
-    font-size:4em;
-    color:var(--green);
-}
-.icons p
-{
-    font-size: 2em;
-    color:var(--green);
-    margin-top:25px;
-    margin-bottom:50px;
-}
- /*------------End of icons------------------------*/
+  }
+  .footer-logo {
+    width: 100% !important;
+  }
+  .quick-links {
+    width: 100% !important;
+  }
+  .quick-links hr,
+  .location hr {
+    width: 95% !important;
+  }
+  .location {
+    width: 100% !important;
+  }
+  .rectangles {
+    margin-top: 30px;
+    width:90% !important;
+  }
 
- /*------------start of elipse circle--------------*/
-  .ellipse
-  {
-    display:flex;
-    justify-content: center;
+  .rectangle h1 {
+    font-size: 27px !important;
+  }
+  .rectangle p {
+    font-size: 22px !important;
+  }
+  .rectangle {
+    width: 85% !important;
+  }
+  #icon {
+    flex-direction: column;
+  }
+  .dairy {
+    margin-bottom: 60px;
+  }
+  .dairy p {
+    margin-top: 10px;
+  }
+
+  #dairys {
+    flex-direction: column !important;
+  }
+
+  #container {
+    flex-direction: column !important;
     align-items: center;
-    float:left;
-    margin-top:60px;
-    margin-left:30px;
-    width:43px;
-    height:43px;
-    border-radius:50%;
-    background-color:var(--yellow);
-    color:var(--green);
   }
-  #dairys
-  {
-    display:flex;
-    justify-content: space-between;
-  }
-  .dairy
-  {
+  .trending-products {
     display: flex;
-    justify-content: center;
+    flex-direction: column !important;
+  }
+  .card-container {
     flex-direction: column;
-    align-items:center;
-    font-size:2em; 
-    font-weight: bold;  
+    align-items: center;
+    margin-top: 30px;
+  }
+  .card-rectangle {
+    /* width: 77% !important; */
+    margin-bottom: 60px;
+  }
 }
-.dairy img
+#grocery {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../images/grocery\ site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  width: 686px;
+  height: 347px;
+  background-color: var(--green);
+}
+.rectangle h1 {
+  font-size: 41px;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.rectangle p {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+#Shoppers {
+  color: var(--white);
+  background-color: var(--red);
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 30px;
+  border: none;
+  width: 253px;
+  height: 60px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+/*-------Ending of Welcome Page--------------------*/
+
+/*-------Start of icons----------------------------*/
+#icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.icons i {
+  font-size: 4em;
+  color: var(--green);
+}
+.icons p {
+  font-size: 2em;
+  color: var(--green);
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+/*------------End of icons------------------------*/
+
+/*------------start of elipse circle--------------*/
+.ellipse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  color: var(--green);
+}
+#dairys {
+  display: flex;
+  justify-content: space-between;
+}
+.dairy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.dairy img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+/*------------End of elipse circle--------------*/
+
+/* ---------start brand--------------*/
+#New-brands {
+  font-size: 2em;
+  color: var(--green);
+  font-weight: bolder;
+  margin-left: 106px;
+  margin-top: 80px;
+}
+.brand-container {
+  display: flex;
+  justify-content: space-between;
+}
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.rectangles {
+  display: flex;
+  height: 103px;
+  width: 288px;
+  background-color: var(--green);
+  border-radius: 0px 10px 10px 0px;
+}
+#paragraph {
+  font-size: 1.8em;
+}
+
+.rectangles img {
+  width: 30%;
+  height: 100%;
+}
+.rectangles div 
 {
-     height:60px;
-     width:60px;
-     border-radius:50%;
+  width:70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:15px;
 }
-  /*------------End of elipse circle--------------*/
+.rectangles div p {
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+}
+/*----------end of brand-------------*/
 
-  /* ---------start brand--------------*/
-  #New-brands
-  {
-    font-size:2em;
-    color:var(--green);
-    font-weight: bolder;
-    margin-left:106px;
-    margin-top:80px;
-  }
-  .brand-container
-  {
-    display:flex;
-    justify-content: space-between;
-  }
-  #container
-  {
-    display:flex;
-    justify-content: space-evenly;
-    margin-top:40px;
-  }
-  .rectangles
-  {
-    display:flex;
-    height:103px;
-    width:288px;
-    background-color:var(--green);
-    border-radius:0px 10px 10px 0px;
-  }
-  #paragraph
-  {
-    font-size: 1.8em;
-  }
-  
-  .rectangles img
-  {
-    width:102px;
-    height:100%;
-  }
-  .rectangles div
-  {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left:15px;
-  }
-  .rectangles div p
-  {
-     font-size:larger;
-     font-weight: bolder;
-     color:white;
-  }
-  /*----------end of brand-------------*/
+/*----------Start of Trending Products------*/
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+.card-container a {
+  text-decoration: none;
+}
 
-  /*----------Start of Trending Products------*/
-   .card-container
-   {
-    display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
-   }
-   .card-container a
-   {
-     text-decoration:none;
-   }
-  
-    .trending-products
-    {
-      font-size: 2em;
-      font-weight: bold;
-      color:var(--green);
-      margin-left:60px;
-      margin-top:50px;
-      margin-bottom:300px;
-    }
-  
-    .card-rectangle
-    {
-      width:170px;
-      height:212px;
-      background-color: var(--green);
-      border-radius: 10px 10px 10px 10px;
-      margin-top:20px;
-    }
-    .card-rectangle img
-    {
-      width:100%;
-      height:109px;
-      border-radius:10px 10px 0px 0px;
-    }
-    #Tomato
-    {
-      color:var(--white);
-      font-weight: bold;
-      margin-left:15px;
-      font-size:20px;
-    }
-    #quantity
-    {
-      color:var(--white);
-      font-weight:normal;
-      margin-left:15px;
-      font-size:15px;
-    }
-    .card-rectangle p i
-    {
-      color:var(--yellow);
-      font-size:7px;
-      margin-left:10px;
-    }
-    #price
-    {
-      color:var(--white);
-      font-size:large;
-      font-weight: bold;
-      margin-left:15px;
-    } 
-    /*----------End of Trending Products------*/
+.trending-products {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--green);
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 300px;
+}
 
-    /*----------Start of footer--------------*/
-    #grocery-shop
-    {
-      display:flex;
-      justify-content: space-between;
-      background-color: var(--green);
-      width:100%;
-    }
-    .footer-logo
-    {
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      width:20%;
-      height:100%;
-    }
-    .footer-logo img
-    {
-       width:100%;
-       height:60%;
-    }
-    .quick-links
-    {
-      width:16%;
-      padding:10px;
-      font-weight: bold;
-      color:white;
-    }
-    .quick-links p
-    {
-       font-size:30px;
-       margin-bottom:20px;
-    }
-    .quick-links hr
-    {
-       border-color:black;
-       width:60%;
-    }
+.card-rectangle {
+  width: 170px;
+  height: 212px;
+  background-color: var(--green);
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 20px;
+}
+.card-rectangle img {
+  width:100%;
+  height: 50%;
+  border-radius: 10px 10px 0px 0px;
+}
+#Tomato {
+  color: var(--white);
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 20px;
+}
+#quantity {
+  color: var(--white);
+  font-weight: normal;
+  margin-left: 15px;
+  font-size: 15px;
+}
+.card-rectangle p i {
+  color: var(--yellow);
+  font-size: 7px;
+  margin-left: 10px;
+}
+#price {
+  color: var(--white);
+  font-size: large;
+  font-weight: bold;
+  margin-left: 15px;
+}
+/*----------End of Trending Products------*/
 
-    .quick-links a
-    {
-      display:block;
-      margin:10px;
-      color:var(--yellow);
-      text-decoration: none;
-      font-size:1.3em;
-    }
-  
-   .location
-   {
-     width:30% !important;
-   }
-   .address
-   {
-     color:var(--yellow);
-     margin:10px !important;
-     font-size:1.3em !important;
-   }
-   .location img
-   {
-     width:90%;
-     height:15vh;
-     border-radius: 25px;
-   }
-    /*----------End of footer--------------*/
+/*----------Start of footer--------------*/
+#grocery-shop {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--green);
+  width: 100%;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+.footer-logo img {
+  width: 100%;
+  height: 60%;
+}
+.quick-links {
+  width: 16%;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+.quick-links p,
+#locate {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.quick-links hr,
+.location hr {
+  border-color: black;
+  width: 60%;
+}
+
+.quick-links a {
+  display: block;
+  margin: 10px;
+  color: var(--yellow);
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.location {
+  width: 30%;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+.address {
+  color: var(--yellow);
+  margin: 10px !important;
+  font-size: 1.3em !important;
+}
+.location img {
+  width: 90%;
+  height: 15vh;
+  border-radius: 25px;
+}
+/*----------End of footer--------------*/
