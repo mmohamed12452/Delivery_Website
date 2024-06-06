@@ -1,97 +1,126 @@
-*
-{
-    margin:0px;
-    padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-:root
-{
-    --green:#50C878;
-    --red:#F70B0B;
-    --yellow:#FFDF00;
-    --white:#FFFFFF;
+:root {
+  --green: #50c878;
+  --red: #f70b0b;
+  --yellow: #ffdf00;
+  --white: #ffffff;
 }
-.login
-{
-    display: flex;
-    width:100%;
-    height:100vh;
-    background-color: var(--green);
-}
-.yellow-box
-{
-    width:50vw;
-    height:100%;
-    background-color:var(--yellow);
-    border-radius:0px 100px 0px 0px;
-}
-.yellow-box h1
-{
-    text-align: center;
-    margin-top:30px;
-    color:var(--white);
-    font-size: 4em;
-}
-#details
-{
-   text-align: center; 
-   margin-top:10px;
-   color:var(--white);
-   font-size:2em;
-   font-weight: bold;
-}
-form input
-{
-    display: block;
-    margin-top:60px;
-    margin-bottom:80px;
-    padding-bottom:40px;
-    border:none;
-    border-bottom: 4px solid var(--green);
-    background-color:var(--yellow);
-    color:var(--green);
-    font-size:2em;
-    width:90%;
-    margin-left:auto;
-    margin-right: auto;
+@media screen and (max-width: 480px) {
+  .yellow-box {
+    width: 100vw !important;
+    margin-top:10px !important;
+  }
+  .yellow-box h1 {
+    font-size: 3em !important;
+    margin-top:5px !important;
+  }
+  form input {
+    font-size: 1.4em !important;
+    font-weight: normal !important;
+    padding-bottom: 15px !important;
+    border-bottom: 1px solid var(--green) !important;
+  }
+  #details {
+    font-size: 1.3em !important;
+    font-weight: normal;
+    margin-top: 5px !important;
+  }
+  #Logins {
+    width: 50% !important;
+    font-size: 2em !important;
     font-weight: bold;
-}
-form input::placeholder
+  }
+#store
 {
-    color:var(--green);
-}
-#Logins
-{
-    display:block;
-    width:35%;
-    padding-top:5px;
-    padding-bottom:5px;
-    border-radius:50px;
-    background-color: var(--red);
-    color:var(--white);
-    font-size:4em;
-    font-weight: bold;
-    margin-left:auto;
+    display: block !important;
+    width:40%;
+    margin-top:10px;
     margin-right:auto;
+    margin-left:auto;
+}
+  .container {
+    display: none;
+  }
+}
+.login {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--green);
+}
+.yellow-box {
+  width: 50vw;
+  height: 100%;
+  background-color: var(--yellow);
+  border-radius: 0px 100px 0px 0px;
+}
+.yellow-box h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--white);
+  font-size: 4em;
+}
+#details {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--white);
+  font-size: 2em;
+  font-weight: bold;
+}
+form input {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  border: none;
+  border-bottom: 4px solid var(--green);
+  background-color: var(--yellow);
+  color: var(--green);
+  font-size: 2em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+form input::placeholder {
+  color: var(--green);
+}
+#Logins {
+  display: block;
+  border:none;
+  width: 35%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 50px;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 4em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.container
-{
-    height:100vh;
-    width:50%;
-    position: relative;
+.container {
+  height: 100vh;
+  width: 50%;
+  position: relative;
 }
-#walmart
+#store
 {
-    position:absolute;
-    right:60px;
-    top:15px;
+    display: none;
 }
-#desktop
-{
-    position:absolute;
-    bottom:0;
-    width: 90%;
-    left: 5%;
-    right:5%;
+#walmart {
+  position: absolute;
+  right: 60px;
+  top: 15px;
+}
+#desktop {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  left: 5%;
+  right: 5%;
 }
