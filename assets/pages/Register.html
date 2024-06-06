@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/register.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/register.css" />
+  </head>
+  <body>
+  
     <!--Start of register----------->
-    <section>
-     <div id="yellow-box">
-      <h1>Register</h1>
-      <p id="details">Please enter your details below:</p>
-      <form>
-        <input type="text" placeholder="First Name:">
-        <input type="text" placeholder="Last Name:">
-        <input type="email" placeholder="Email:">
-        <input type="number" placeholder="Phone-Number:">
-        <input type="password" placeholder="Password:">
-        <input type="password" placeholder="Retype Password:">
-      </form>
-     </div>
+ 
+    <section class="registers">
+      <div id="yellow-box">
+        <img src="/assets/images/walmart.png" alt="image" id="store" />
+        <h1>REGISTER</h1>
+        <p id="details">Please enter your details below:</p>
 
-     <div id="green-box">
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="First Name:" />
+            <input type="text" placeholder="Last Name:" />
+          </div>
 
-     </div>
+          <div class="input-group">
+            <input type="email" placeholder="Email:" />
+            <input type="number" placeholder="Phone-Number:" />
+          </div>
+
+          <div class="input-group">
+            <input type="password" placeholder="Password:" />
+            <input type="password" placeholder="Retype Password:" />
+          </div>
+        </form>
+
+        <button id="submit">Submit</button>
+        
+       
+      </div>
+
+      <div id="green-box-container">
+        <img src="/assets/images/walmart.png" alt="image" id="walmart" />
+        <img src="/assets/images/vector.png" alt="image" id="desktop" />
+      </div>
     </section>
- <!--end of register----------->
-</body>
+    <!--end of register----------->
+  </body>
 </html>
